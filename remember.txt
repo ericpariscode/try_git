@@ -1,0 +1,106 @@
+1.
+git config --global user.name ...
+git config --global user.email ...
+git config --global color.ui true (command line colors)
+2.start a repo 
+mkdir store 
+cd store 
+git init
+//initialized empty git 
+git status //check what's changed 
+git add README.txt//add readme to staging area
+git commit -m "create file" //commit changes
+git add --all//add all files
+git log //history
+git add <list of files>
+git add *.txt//add all txt file 
+git add folder/*.txt
+git add folders/      //add all file in folders
+git add "*.txt"
+git diff //show unstaged differences
+git diff --staged//view staged differences
+git checkout 
+git reset //undo reset 
+git pull//pull changes down from the remote
+git remote add name email 
+//remove remotes
+git remote rm name 
+//push to remotes 
+git push -u name branch
+heroku create
+git remote -v
+git push heroku master
+git clone https://github.com/codeschool/git-real.git name_of_folder
+git branch new_branch
+git checkout new_branch
+git merge new_branch//merge feature to master
+git branch -d new_branch
+git checkout -b new_branch
+git add folder/file.php
+git commit -m "add file.php"
+
+git checkout master
+git branch
+git pull
+git add file.rb
+git commit -m "fix bug"
+git push
+
+merge:
+git checkout new_branch
+git checkout master
+git merge new_branch
+3.
+git add file 
+git commit -a -m "file"
+git push //push changes 
+4.pull new branch
+git pull
+git branch 
+git branch -r//list all remote branches
+git checkout new_branch 
+git branch
+git remote show origin
+5.delete remote branch
+git commit -m -a "delete"
+git push 
+git remote show origin 
+git remote prune origin
+6.
+git push heroku-staging staging-master
+7.
+git tag//ref
+git checkout folder//
+add new tag
+push new tags 
+8.
+git fetch
+
+9.different git commits 
+git commit -am "first"
+
+10.rebase 
+git rebase
+git checkout new_branch//switch to branch new_branch
+git rebase master
+git checkout master//switch to master
+git merge new_branch
+11.conflicts
+git fetch
+git rebase
+12.diff
+git diff HEAD^//lastest commit 
+git diff HEAD^^//grandparent of lastest commit 
+git diff HEAD~10//10 commit ago
+git diff HEAD^..HEAD//second most recent commit vs most recent
+13.remove files 
+git rm README.txt
+git status 
+git commit -m "remove readme"
+14.untracking files 
+git add .gitignore
+git commit -m "ignore"
+15.local config
+git config user.email "@email.com"
+git config --list 
+git config user.email
